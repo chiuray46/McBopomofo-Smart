@@ -6,7 +6,7 @@
 
 - 專案：https://github.com/openvanilla/McBopomofo
 - 基線 commit：`e965b78296b1322d11ce672aaf626c5e65411881`
-- 授權：MIT License（完整條款見 `ThirdPartyLicenses/SQLite.swift-LICENSE.txt`）
+- 授權：MIT License（完整條款見根目錄 `LICENSE.txt`）
 - 版權：依 `LICENSE.txt` 所列之原作者與貢獻者
 
 ## SQLite.swift
