@@ -33,7 +33,7 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: macos-latest
+    runs-on: xcode-27
     timeout-minutes: 360
     permissions:
       security-events: write
