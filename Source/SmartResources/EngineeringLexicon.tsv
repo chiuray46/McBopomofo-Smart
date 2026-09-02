@@ -1,0 +1,72 @@
+# phrase	category	weight	completion_prefixes	context_tokens
+機械設計	mechanical	0.90	機械設	工程|設計
+SOLIDWORKS	cad	1.20	SOLID|SOLIDW	板金|組合件|工程圖
+SOLIDWORKS板金	cad	1.20	SOLIDWORKS板	SOLIDWORKS|板金
+板金	mechanical	0.90	板	SOLIDWORKS|折彎
+板金折彎	mechanical	1.00	板金折	板金|展開
+軸承	mechanical	1.00	軸	法蘭|馬達|軸
+法蘭軸承	mechanical	1.20	法蘭軸	法蘭|軸
+法蘭接頭	mechanical	1.00	法蘭接	法蘭|管路
+法蘭螺帽	fastener	0.95	法蘭螺	法蘭|螺絲
+線性滑軌	mechanical	1.10	線性滑	機構|定位
+螺絲	fastener	0.90	螺	M8|固定
+M8螺絲	fastener	1.10	M8|M8螺	螺絲|固定
+M8 螺絲	fastener	1.10	M8 |M8 螺	機械設計|固定
+螺帽	fastener	0.90	螺帽	螺絲|法蘭
+拉帽	fastener	1.00	拉帽	板金|螺絲
+等高螺絲	fastener	1.10	等高螺	治具|板金
+碟簧	mechanical	1.00	碟	彈簧|預壓
+彈簧	mechanical	0.80	彈	預壓|避震器
+避震器	mechanical	1.00	避震	懸吊|彈簧
+有限元素分析	simulation	1.20	有限元素|有限元素分	應力|應變|網格
+ABAQUS	simulation	1.10	ABA|ABAQ	有限元素|模擬
+MSC Marc	simulation	1.10	MSC|MSC M	有限元素|模擬
+Fortran	software	0.95	For|Fort	程式|有限元素
+FEA	simulation	1.00	FE|FEA	有限元素|應力
+CAD	cad	0.95	CA|CAD	設計|圖面
+CAE	simulation	0.95	CA|CAE	分析|模擬
+CNC	manufacturing	1.00	CN|CNC	加工|刀具
+3D列印	additive	1.10	3D|3D列	切片|線材
+Bambu Lab	additive	1.10	Bambu|Bambu L	3D列印|AMS
+Bambu Studio	additive	1.10	Bambu|Bambu S	3D列印|切片
+AMS	additive	1.00	AM|AMS	Bambu|線材
+AMS 2 Pro	additive	1.10	AMS 2|AMS 2 P	Bambu|線材
+TPU	material	1.00	TP|TPU	線材|柔性
+TPU 95A	material	1.10	TPU 9|TPU 95	TPU|線材
+PETG	material	1.00	PET|PETG	線材|列印
+PLA	material	0.90	PL|PLA	線材|列印
+ASA	material	1.00	AS|ASA	線材|列印
+PPA-CF	material	1.20	PPA|PPA-	碳纖|線材
+PAHT-CF	material	1.20	PAHT|PAHT-	碳纖|線材
+光達	robotics	1.00	光	導航|定位
+LiDAR	robotics	1.20	Li|LiD	光達|導航
+RealSense	robotics	1.20	Real|RealS	相機|深度
+RealSense相機	robotics	1.20	RealSense相	深度|視覺
+SLAM	robotics	1.10	SL|SLA	光達|導航
+AMR	robotics	1.20	AM|AMR	導航|車隊
+馬達	mechanical	0.90	馬	減速機|慣量
+伺服馬達	mechanical	1.10	伺服馬	控制|編碼器
+減速機	mechanical	1.00	減速	馬達|扭力
+扭力	mechanical	0.90	扭	馬達|螺絲
+慣量	mechanical	0.90	慣	馬達|加速度
+應力	simulation	0.90	應	有限元素|材料
+應變	simulation	0.90	應變	有限元素|材料
+摩擦係數	simulation	1.00	摩擦係	接觸|材料
+公差	mechanical	0.90	公	尺寸|圖面
+幾何公差	mechanical	1.10	幾何公	圖面|基準
+API	mixed-input	0.00	API	開發|程式
+USB	mixed-input	0.00	USB	連接|硬體
+PDF	mixed-input	0.00	PDF	文件|圖面
+VPN	mixed-input	0.00	VPN	網路|連線
+WiFi	mixed-input	0.00	WiFi	網路|連線
+CPU	mixed-input	0.00	CPU	電腦|效能
+GPU	mixed-input	0.00	GPU	電腦|運算
+RAM	mixed-input	0.00	RAM	電腦|記憶體
+Git	mixed-input	0.00	Git	程式|版本
+SSH	mixed-input	0.00	SSH	網路|連線
+URL	mixed-input	0.00	URL	網頁|連結
+SDK	mixed-input	0.00	SDK	開發|程式
+macOS	mixed-input	0.00	macOS	Apple|電腦
+iOS	mixed-input	0.00	iOS	Apple|手機
+APP	mixed-input	0.00	APP	軟體|手機
+test	mixed-input	0.00	test	測試|程式

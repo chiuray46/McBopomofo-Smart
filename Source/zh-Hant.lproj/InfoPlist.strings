@@ -1,0 +1,5 @@
+CFBundleName = "智慧小麥 Beta";
+CFBundleDisplayName = "智慧小麥 Beta";
+NSHumanReadableCopyright = "Copyright © 2011-2026 Mengjuei Hsieh et al.\nAll Rights Reserved.";
+"org.openvanilla.inputmethod.SmartMcBopomofoBeta.Bopomofo" = "智慧小麥 Beta";
+"org.openvanilla.inputmethod.SmartMcBopomofoBeta.PlainBopomofo" = "智慧傳統注音 Beta";

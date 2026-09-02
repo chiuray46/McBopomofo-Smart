@@ -1,0 +1,5 @@
+CFBundleName = "Smart McBopomofo Beta";
+CFBundleDisplayName = "Smart McBopomofo Beta";
+NSHumanReadableCopyright = "Copyright © 2011-2026 Mengjuei Hsieh et al.\nAll Rights Reserved.";
+"org.openvanilla.inputmethod.SmartMcBopomofoBeta.Bopomofo" = "Smart McBopomofo Beta";
+"org.openvanilla.inputmethod.SmartMcBopomofoBeta.PlainBopomofo" = "Smart Plain Bopomofo Beta";

@@ -1,0 +1,14 @@
+{
+  "baseWeight": 1.0,
+  "contextWeight": 0.75,
+  "userWeight": 1.10,
+  "recencyWeight": 0.30,
+  "domainWeight": 0.65,
+  "phraseCompletionWeight": 0.55,
+  "localModelWeight": 0.0,
+  "learningHalfLifeSeconds": 2592000,
+  "minimumObservations": 2,
+  "minimumCorrectionRejections": 2,
+  "correctionFeedbackMaxAgeSeconds": 7776000,
+  "completionLimit": 5
+}
