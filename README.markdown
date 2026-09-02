@@ -38,7 +38,7 @@
 需求：
 
 - macOS 26 或更新版本
-- Xcode 26 或更新版本
+- Xcode 27（目前不支援以舊版 Xcode 建置）
 - Python 3.9 或更新版本
 
 以 Xcode 開啟 `McBopomofo.xcodeproj`，選擇 `McBopomofo` scheme 建置。若使用專案附帶的安全建置工具：
