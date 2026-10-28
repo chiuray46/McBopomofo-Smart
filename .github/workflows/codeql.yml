@@ -33,7 +33,9 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: xcode-27
+    # CodeQL traced builds do not support macOS 27 or Xcode 27.
+    # https://github.com/github/codeql-cli-binaries/releases/tag/v2.27.3
+    runs-on: ${{ matrix.language == 'python' && 'xcode-27' || 'macos-15' }}
     timeout-minutes: 360
     permissions:
       security-events: write
@@ -55,6 +57,12 @@ jobs:
       with:
         python-version: '3.12'
 
+    - name: Select supported Xcode for traced builds
+      if: matrix.language == 'swift' || matrix.language == 'cpp'
+      run: |
+        sudo xcode-select --switch /Applications/Xcode_16.4.app/Contents/Developer
+        xcodebuild -version
+
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
       with:
@@ -64,7 +72,7 @@ jobs:
     - name: Build project
       if: matrix.language == 'swift' || matrix.language == 'cpp'
       run: |
-        PYTHON=$(which python3) xcodebuild -scheme McBopomofoInstaller -configuration Debug build ARCHS=arm64 ONLY_ACTIVE_ARCH=YES
+        PYTHON=$(which python3) xcodebuild -scheme McBopomofoInstaller -configuration Debug build ARCHS=arm64 ONLY_ACTIVE_ARCH=YES MACOSX_DEPLOYMENT_TARGET=13.0
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
